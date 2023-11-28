@@ -1,12 +1,14 @@
 import './styles.css';
 import Header from '../Header';
+import Main from '../Main';
 
 const Layout = () => {
   return (
     <>
       <Header />
+      <Main />
     </>
   );
-}
+};
 
 export default Layout;
