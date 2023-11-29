@@ -3,14 +3,19 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './routes/root';
 import Home from './pages/Home';
 import Records from './pages/Records';
+import { recordsLoader } from './requests/records';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '*',
     Component: Root,
     children: [
-      { path: '*', Component: Home },
-      { path: 'records', Component: Records },
+      { index: true, Component: Home },
+      {
+        path: 'records',
+        Component: Records,
+        loader: recordsLoader,
+      },
     ],
   },
 ]);
