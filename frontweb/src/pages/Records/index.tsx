@@ -2,13 +2,14 @@ import { Record } from '../../types/record';
 import { SpringPage } from '../../types/vendor/spring';
 import './styles.css';
 import { useLoaderData } from 'react-router-dom';
+import { formatDate } from '../../utils/formatters';
 
 const Records = () => {
   const records = useLoaderData() as SpringPage<Record>;
 
   return (
     <div className="page-container">
-      <div className='table-responsive'>
+      <div className="table-responsive">
         <table className="records-table" cellPadding={0} cellSpacing={0}>
           <thead>
             <tr>
@@ -23,12 +24,12 @@ const Records = () => {
           <tbody>
             {Object.entries(records.content).map(([id, record]) => (
               <tr key={id}>
-                <td>{record.moment}</td>
+                <td>{formatDate(record.moment)}</td>
                 <td>{record.name}</td>
                 <td>{record.age}</td>
-                <td className='text-secondary'>{record.gamePlatform}</td>
+                <td className="text-secondary">{record.gamePlatform}</td>
                 <td>{record.genreName}</td>
-                <td className='text-primary'>{record.gameTitle}</td>
+                <td className="text-primary">{record.gameTitle}</td>
               </tr>
             ))}
           </tbody>
