@@ -42,6 +42,7 @@
   border-radius: 0px 10px 10px 0px;
   width: 70px;
   background-color: var(--color-coral);
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;

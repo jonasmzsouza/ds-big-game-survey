@@ -4,16 +4,14 @@ import { SpringPage } from '../../types/vendor/spring';
 import { useLoaderData } from 'react-router-dom';
 import { formatDate } from '../../utils/formatters';
 import Pagination from '../../components/Pagination';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { PageContext } from '../../PageContext';
 
 const Records = () => {
   const records = useLoaderData() as SpringPage<Record>;
-  const [activePage, setActivePage] = useState(0);
   const { setPageContextData } = useContext(PageContext);
 
   const handlePageChange = (index: number) => {
-    setActivePage(index);
     setPageContextData({
       page: index,
     });
@@ -48,9 +46,9 @@ const Records = () => {
         </table>
       </div>
       <Pagination
-        activePage={activePage}
-        goToPage={handlePageChange}
-        totalPages={records?.totalPages}
+        pageCount={records ? records?.totalPages : 0}
+        range={3}
+        onChange={handlePageChange}
       />
     </div>
   );

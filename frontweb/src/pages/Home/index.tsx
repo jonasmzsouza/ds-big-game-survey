@@ -1,5 +1,5 @@
 import './styles.css';
-import ArrowIcon from '../../assets/arrow.svg';
+import ArrowIcon from '../../components/ArrowIcon';
 import GamerImage from '../../assets/gamer.svg';
 import { Link } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ const Home = () => (
         <div className="home-actions">
           <button className="home-btn">QUERO SABER QUAIS SÃO</button>
           <div className="home-btn-icon">
-            <img src={ArrowIcon} alt="arrow icon" />
+            <ArrowIcon />
           </div>
         </div>
       </Link>
