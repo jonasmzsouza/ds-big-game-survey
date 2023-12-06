@@ -10,7 +10,7 @@ import Pagination from '../../components/Pagination';
 
 const Records = () => {
   const records = useLoaderData() as SpringPage<Record>;
-  const { setPageContextData } = useContext(PageContext);
+  const { pageContextData, setPageContextData } = useContext(PageContext);
 
   const handlePageChange = (index: number) => {
     setPageContextData({
@@ -48,6 +48,7 @@ const Records = () => {
         </table>
       </div>
       <Pagination
+        initialPage={pageContextData.page}
         pageCount={records ? records?.totalPages : 0}
         range={3}
         onChange={handlePageChange}

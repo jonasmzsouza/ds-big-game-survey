@@ -3,16 +3,16 @@ import ReactPaginate from 'react-paginate';
 import ArrowIcon from '../ArrowIcon';
 
 type Props = {
-  forcePage?: number;
+  initialPage?: number;
   pageCount: number;
   range: number;
   onChange?: (pageNumber: number) => void;
 };
 
-const Pagination = ({ forcePage, pageCount, range, onChange }: Props) => {
+const Pagination = ({ initialPage, pageCount, range, onChange }: Props) => {
   return (
     <ReactPaginate
-      forcePage={forcePage}
+      initialPage={initialPage}
       pageCount={pageCount}
       pageRangeDisplayed={range}
       marginPagesDisplayed={1}
