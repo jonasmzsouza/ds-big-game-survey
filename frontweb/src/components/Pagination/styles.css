@@ -8,14 +8,14 @@
 }
 
 .pagination-item {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin: 0 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--color-darkslategray);
-  border-radius: 10px;
+  border-radius: 7px;
   font-size: 18px;
   color: var(--color-coral);
   font-weight: 700;
@@ -52,4 +52,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 576px) {
+  .pagination-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
 }
