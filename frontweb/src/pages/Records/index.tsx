@@ -3,9 +3,10 @@ import { Record } from '../../types/record';
 import { SpringPage } from '../../types/vendor/spring';
 import { useLoaderData } from 'react-router-dom';
 import { formatDate } from '../../utils/formatters';
-import Pagination from '../../components/Pagination';
 import { useContext } from 'react';
 import { PageContext } from '../../PageContext';
+import Filters from '../../components/Filters';
+import Pagination from '../../components/Pagination';
 
 const Records = () => {
   const records = useLoaderData() as SpringPage<Record>;
@@ -19,6 +20,7 @@ const Records = () => {
 
   return (
     <div className="page-container">
+      <Filters link="/charts" linkText="Ver Gráfico" />
       <div className="table-responsive">
         <table className="records-table" cellPadding={0} cellSpacing={0}>
           <thead>
