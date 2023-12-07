@@ -1,6 +1,7 @@
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './routes/root';
+import Charts from './pages/Charts';
 import Home from './pages/Home';
 import Records from './pages/Records';
 import { recordsLoader } from './requests/records';
@@ -23,6 +24,7 @@ const App = () => {
           Component: Records,
           loader: recordsLoader(pageContextData.page),
         },
+        { path: 'charts', Component: Charts },
       ],
     },
   ]);
