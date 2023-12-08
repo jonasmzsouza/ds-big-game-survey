@@ -1,7 +1,6 @@
 import { Record } from '../types/record';
 import { SpringPage } from '../types/vendor/spring';
-
-const BASE_URL = 'http://localhost:8080';
+import { BASE_URL } from './system';
 
 export const recordsLoader = (page?: number) => {
   return async (): Promise<SpringPage<Record>> => {

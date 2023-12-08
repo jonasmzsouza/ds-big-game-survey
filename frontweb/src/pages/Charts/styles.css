@@ -2,119 +2,21 @@
   display: flex;
 }
 
-.top-related {
-  background-color: var(--color-dimgray);
-  padding-top: 30px;
-  padding-left: 70px;
-  border-radius: 10px;
-  flex: 1;
-}
-
-.top-related-title {
-  margin-top: 0;
-  font-size: 36px;
-  color: #FFF;
-}
-
-.games-container {
-  display: flex;
-  justify-content: center;
-}
-
-.games-list {
-  width: 100%;
-}
-
-.game-result {
-  display: flex;
-  align-items: center;
-}
-
-.game-title {
-  font-size: 24px;
-  color: var(--color-turquoise);
-  margin-right: 40px;
-  width: 400px;
-  text-align: right;
-}
-
-.game-rating {
-  height: 20px;
-  width: 300px;
-  background-color: var(--color-coral);
-  border-radius: 10px;
-}
-
-.charts {
+.side-charts {
   color: #FFF;
   width: 400px;
   margin-left: 30px;
 }
-
-.chart-title {
-  margin-top: 0;
-  font-size: 28px;
-}
-
-.side-chart {
-  padding-top: 15px;
-  padding-left: 25px;
-  background-color: var(--color-dimgray);
-  border-radius: 10px;
-}
-
-.platform-chart {
-  margin-bottom: 25px;
-}
-
 
 @media (max-width: 1400px) {
   .chart-container {
     flex-wrap: wrap;
   }
 
-  .top-related {
-    padding-top: 15px;
-    padding-left: 25px;
-    margin-bottom: 25px;
-  }
-
-  .charts {
+  .side-charts {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     margin: 0;
-  }
-
-  .side-chart {
-    flex: 1;
-  }
-
-  .platform-chart {
-    margin-right: 25px;
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 850px) {
-  .top-related-title,
-  .chart-title {
-    font-size: 22px;
-  }
-
-  .top-related,
-  .side-chart {
-    padding-top: 10px;
-    padding-left: 10px;
-  }
-
-  .side-chart {
-    flex: unset;
-    width: 100%;
-  }
-
-  .platform-chart {
-    margin-right: 0;
-    margin-bottom: 25px;
   }
 }

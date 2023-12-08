@@ -5,6 +5,7 @@ import Charts from './pages/Charts';
 import Home from './pages/Home';
 import Records from './pages/Records';
 import { recordsLoader } from './requests/records';
+import { chartsLoader } from './requests/charts';
 import { PageContext, PageContextData } from './PageContext';
 import { useState } from 'react';
 
@@ -24,7 +25,7 @@ const App = () => {
           Component: Records,
           loader: recordsLoader(pageContextData.page),
         },
-        { path: 'charts', Component: Charts },
+        { path: 'charts', Component: Charts, loader: chartsLoader },
       ],
     },
   ]);
