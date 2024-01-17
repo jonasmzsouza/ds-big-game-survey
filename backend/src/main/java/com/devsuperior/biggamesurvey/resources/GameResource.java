@@ -1,8 +1,6 @@
 package com.devsuperior.biggamesurvey.resources;
 
 import com.devsuperior.biggamesurvey.dto.GameDTO;
-import com.devsuperior.biggamesurvey.entities.Game;
-import com.devsuperior.biggamesurvey.repositories.GameRepository;
 import com.devsuperior.biggamesurvey.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
