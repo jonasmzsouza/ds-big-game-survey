@@ -17,10 +17,11 @@
 
 ## 💻 About the project
 
-Big Game Survey - Fullstack web application developed in ReactJS and Java with the Spring Boot framework [DevSuperior](https://devsuperior.com.br/).<br>
+Big Game Survey - Fullstack web application developed in ReactJS and Java with the Spring Boot framework at [DevSuperior](https://devsuperior.com.br/).<br>
 This is a game survey application, with the special feature of working with graphics.
 
 ### Class Diagram
+![ds-big-game-survey-class-diagram](https://github.com/jonasmzsouza/ds-big-game-survey/assets/61324433/5a266fef-f0da-4511-bcee-0de45547ffd3)
 
 ### Frontweb Preview
 <img  src="https://raw.githubusercontent.com/jonasmzsouza/jonasmzsouza.github.io/main/assets/images/ds-big-game-survey.jpg"  width="100%"  alt="screenshot ds-big-game-survey">
